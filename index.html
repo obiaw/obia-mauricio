@@ -22,17 +22,17 @@
         <div class="col-md-12">
           <h1 id="title">freeCodeCamp Survey Form</h1>
           <p id="description">Thank you for taking the time to help us improve the platform</p>
-          <form id="survery-form">
+          <form id="survey-form">
             <div class="form-group">
-              <label class="form-control-label">Name</label>
-              <input  id="name" type="text" placeholder="Enter your name" class="form-control" />
+              <label class="form-control-label" id="name-label">Name</label>
+              <input  id="name" type="text"  required placeholder="Enter your name" class="form-control" />
             </div>
             <div class="form-group">
-              <label class="form-control-label">Email</label>
-              <input id="email" type="email" placeholder="Enter your email" class="form-control"
+              <label class="form-control-label" id="email-label">Email</label>
+              <input id="email" type="email" required placeholder="Enter your email" class="form-control"
             </div>
             <div class="form-group">
-              <label class="form-control-label">Age(optional)</label>
+              <label class="form-control-label" id="number-label">Age(optional)</label>
               <input id="number" name="number" maxlength="3" size="2" min="1" max="100" type="number" class="form-control" placeholder="age" />
             </div>
             <div class="form-group">
@@ -46,20 +46,22 @@
                 <option value="other">Other</option>
               </select>
             </div>
+            <!-- <div class="form-group">
+              <input type="radio" name="radiodefinitely" value="definitely" > Definitely
+              <input type="radio" name="maybe" value="maybe" > Maybe
+              <input type="radio" name="notsure" value="notsure" > Not sure
+            </div> -->
               <div class="row">
             <label class="container">
-              <input type="radio" name="radiodefinitely">
-              <span class="checkmark"></span>Definitely
+              <input type="radio" name="definitely"value="radiodefinitely"> Definitely
             </label>
             <label class="container">
-              <input type="radio" name="radiomaybe">
-              <span class="checkmark"></span>Maybe
+              <input type="radio" name="maybe" value="mabye"> Maybe
             </label>
             <label class="container">
-              <input type="radio" name="radionotsure">
-              <span class="checkmark"></span>Not sure
+              <input type="radio" name="notsure" value="notsure"> Not sure
             </label>
-            </div>
+          </div>
             <div class="form-group">
               <label class="form-control-label">What is your favorite feature of freeCodeCamp? </label>
               <select class="form-control" name="dropdown">
@@ -71,54 +73,54 @@
               </select>
             </div>
             <div class="form-group">
-              <input type="checkbox">
+              <input type="checkbox" value="Front-end Projects">
               <label>Front-end Projects</label>
             </div>
             <div class="form-group">
-              <input type="checkbox">
+              <input type="checkbox" value="Back-end Projects">
               <label>Back-end Projects</label>
             </div>
             <div class="form-group">
-              <input type="checkbox">
+              <input type="checkbox" value="Data Visualization">
               <label>Data Visualization</label>
             </div>
             <div class="form-group">
-              <input type="checkbox">
+              <input type="checkbox" value="Challenges">
               <label>Challenges</label>
             </div>
             <div class="form-group">
-              <input type="checkbox">
+              <input type="checkbox" value="Open Source Community">
               <label>Open Source Community</label>
             </div>
             <div class="form-group">
-              <input type="checkbox">
+              <input type="checkbox" value="gitter help rooms">
               <label>Gitter help rooms</label>
             </div>
             <div class="form-group">
-              <input type="checkbox">
+              <input type="checkbox" value="videos">
               <label>Videos</label>
             </div>
             <div class="form-group">
-              <input type="checkbox">
+              <input type="checkbox" value="City Meetups">
               <label>City Meetups</label>
             </div>
             <div class="form-group">
-              <input type="checkbox">
+              <input type="checkbox" value="Wiki">
               <label>Wiki</label>
             </div>
             <div class="form-group">
-              <input type="checkbox">
+              <input type="checkbox" value="Forum">
               <label>Forum</label>
             </div>
             <div class="form-group">
-              <input type="checkbox">
+              <input type="checkbox" value="Additional Courses">
               <label>Additional Courses</label>
             </div>
             <div class="form-group">
               <label class="form-control-label">Any comments or suggestions?</label>
               <textarea  id="finaltxt" type="text" placeholder="Enter your comment here" class="form-control">Enter yout comment here</textarea>
             </div>
-            <input type="button" value="Submit">
+            <button type="submit" value="Submit" class="btn btn-success btn-block" id="submit">Submit</button>
           </form>
         </div>
       </div>
