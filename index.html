@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -39,26 +46,26 @@
                 <option value="other">Other</option>
               </select>
             </div>
-            <div class="form-group">
-              <label class="form-control-label">Would you recommend freeCodeCamp to a friend?</label>
-              <div class="input-group">
-                <input type="radio"  name="definitely"/> Definitely
-              </div>
-              <div class="input-group">
-                <input type="radio"  name="maybe"/> Maybe
-              </div>
-              <div class="input-group">
-                <input type="radio"  name="notsure"/> Not sure
-              </div>
+          
+            <!-- <div class="container"> -->
+            <div class="row">
+            <label class="container">
+              <input type="radio" name="radiodefinitely">
+              <span class="checkmark"></span>Definitely
+            </label>
+            <label class="container">
+              <input type="radio" name="radiomaybe">
+              <span class="checkmark"></span>Maybe
+            </label>
+            <label class="container">
+              <input type="radio" name="radionotsure">
+              <span class="checkmark"></span>Not sure
+            </label>
             </div>
           </form>
         </div>
-
-
       </div>
-
     </div>
-
     <script  src="js/index.js"></script>
   </body>
 </html>
